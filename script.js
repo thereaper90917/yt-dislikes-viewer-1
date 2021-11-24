@@ -185,7 +185,7 @@ browser.storage.local.get("apiKey", ({ apiKey }) => {
         selector.appendChild(progress);
       }
 
-      chrome.runtime.onMessage.addListener(function (
+      browser.runtime.onMessage.addListener(function (
         request,
         sender,
         sendResponse
